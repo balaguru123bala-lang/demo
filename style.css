@@ -1,0 +1,47 @@
+/* Grand Palace Hotel - main stylesheet (minify before deployment) */
+:root{--g:#c9a227;--k:#0d0d0d;--b:#3b2418;--c:#faf6ee}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:16px/1.7 Montserrat,system-ui,sans-serif;color:#2a2a2a;background:#fff}
+img{max-width:100%;height:auto;display:block}a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2;color:var(--k)}
+.w{max-width:1180px;margin:auto;padding:0 20px}.sec{padding:80px 0}.alt{background:var(--c)}
+h2{font-size:clamp(1.7rem,3vw,2.5rem);margin-bottom:12px}.ctr{text-align:center}.sub{max-width:640px;margin:0 auto 40px;color:#666}
+.tb{background:var(--k);color:#ddd;font-size:13px;padding:8px 0}.tb .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+header.nv{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.96)}
+.nv .w{display:flex;align-items:center;justify-content:space-between;height:72px}
+.lg{font-family:'Playfair Display',serif;color:var(--g);font-size:1.5rem}
+.nv ul{display:flex;gap:26px;list-style:none;padding:0;align-items:center}.nv li a{color:#fff;font-size:14px;padding:6px 0;border-bottom:2px solid transparent;transition:.3s}
+.nv li a:hover,.nv li a[aria-current]{color:var(--g);border-color:var(--g)}.nv li a.btn{color:var(--k);padding:10px 20px;border:0}
+.tg{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer}
+.btn{display:inline-block;background:var(--g);color:var(--k);padding:12px 28px;border:0;font:600 14px Montserrat,sans-serif;cursor:pointer;transition:.3s;border-radius:2px}
+.btn:hover{background:var(--b);color:var(--g);transform:translateY(-2px)}
+.hero{position:relative;min-height:88vh;color:#fff;display:flex;align-items:center;overflow:hidden}
+.hero .sl{position:absolute;inset:0;opacity:0;transition:opacity 1.2s}.hero .sl.on{opacity:1}.hero .sl img{width:100%;height:100%;object-fit:cover}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.25));z-index:1}
+.hc{position:relative;z-index:2}.hero h1{color:#fff;font-size:clamp(2.3rem,5.5vw,4.3rem);max-width:780px}.hero p{max-width:560px;margin:16px 0 28px;color:#eee}
+.bf{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;background:rgba(255,255,255,.97);padding:20px;color:#222;align-items:start;border-radius:4px}
+label{font-size:12px;font-weight:600;display:block}
+input,select,textarea{width:100%;padding:11px;border:1px solid #ccc;font:inherit;margin-top:4px;border-radius:2px}
+input:focus,select:focus,textarea:focus,a:focus-visible,button:focus-visible{outline:2px solid var(--g);outline-offset:2px}
+.er{color:#b3261e;font-size:12px;display:block;min-height:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:26px}
+.card{background:#fff;box-shadow:0 6px 24px rgba(0,0,0,.08);overflow:hidden}
+.card .im{overflow:hidden}.card img{aspect-ratio:3/2;object-fit:cover;width:100%;transition:.5s}.card:hover img{transform:scale(1.06)}
+.cb{padding:20px}.cb h3{margin-bottom:6px}.pr{color:var(--b);font-weight:600;margin-bottom:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.dark{background:var(--b);color:#eee}.dark h2,.dark h3{color:var(--g)}.dark .sub{color:#ccc}
+.tsl{max-width:720px;margin:auto;text-align:center}.tsl .sl{display:none}.tsl .sl.on{display:block}
+.ar{background:none;border:1px solid var(--g);color:var(--g);width:40px;height:40px;cursor:pointer;margin:14px 6px 0;font-size:18px}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}.gg img{aspect-ratio:1;object-fit:cover;width:100%;cursor:zoom-in;transition:.4s}.gg img:hover{filter:brightness(.8)}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:99;padding:20px;cursor:zoom-out}.lb.on{display:flex}.lb img{max-height:90vh}
+.fl{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:30px}.fb{background:#fff;border:1px solid var(--g);padding:8px 20px;cursor:pointer;font:inherit}.fb.on,.fb:hover{background:var(--g)}
+.fq{width:100%;text-align:left;background:#fff;border:0;border-bottom:1px solid #ddd;padding:16px;font:600 16px Montserrat,sans-serif;cursor:pointer}.fa{display:none;padding:14px 16px;background:#fff;font-weight:400;font-family:Montserrat,sans-serif}.fq[aria-expanded=true]+.fa{display:block}
+.ph{background:linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.68)),url(../images/hotel-banner.webp) center/cover;color:#fff;padding:70px 0;text-align:center}.ph h1{color:#fff}.bc{font-size:13px;color:var(--g);margin-top:10px}
+.ok{display:none;background:#e8f5e9;border-left:4px solid #2e7d32;padding:16px;margin-top:16px}.ok.on{display:block}
+.lst{padding-left:20px}.lst li{margin:4px 0}
+footer{background:var(--k);color:#bbb;padding:60px 0 20px}footer h3{color:var(--g);font-size:1.1rem;margin-bottom:12px}footer ul{list-style:none;padding:0}footer a:hover{color:var(--g)}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px}.cp{text-align:center;border-top:1px solid #333;margin-top:30px;padding-top:16px;font-size:13px}
+.rv{transition:.8s}.js .rv{opacity:0;transform:translateY(26px)}.js .rv.in{opacity:1;transform:none}
+.sk{position:absolute;left:-999px}.sk:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:100}
+@media(max-width:860px){.tg{display:block}.nv ul{display:none;position:absolute;top:72px;left:0;right:0;background:var(--k);flex-direction:column;padding:20px;gap:14px}.nv ul.open{display:flex}.two{grid-template-columns:1fr}.sec{padding:56px 0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
